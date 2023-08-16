@@ -20,7 +20,7 @@
             const formData = new FormData();
 
             formData.append("pdfFile", inpFile.files[0]);
-
+//^CL[A-Z0-9]{8}$
             fetch("/extract-text", {
                 method: "post",
                 body: formData
